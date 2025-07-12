@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ajuda - Verificador de Seguidores</title>
+  <link rel="icon" type="image/x-icon" href="./src/icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1,
+    h2 {
+      color: #222;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    pre {
+      background: #f9f9f9;
+      border-left: 4px solid #ccc;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    a.botao-pix {
+      display: inline-block;
+      background-color: #820ad1;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🔍 Verificador de Seguidores no Instagram</h1>
+  <p><a href="./index.html">Volta página inicial</a></p>
+  <p>
+    Este é um projeto simples feito com <strong>HTML</strong>,
+    <strong>CSS</strong> e <strong>JavaScript puro</strong> para verificar
+    quais perfis você segue no Instagram e que
+    <strong>não te seguem de volta</strong> é importante destacar que este site não solicita nenhum tipo de login ou dado sensivel do seu instagram, sendo um metódo 100% seguro para verificar seus seguidores.
+  </p>
+
+  <h2>📌 Objetivo</h2>
+  <p>Comparar dois arquivos JSON exportados do Instagram:</p>
+  <ul>
+    <li><code>following.json</code> (quem você segue)</li>
+    <li><code>followers_1.json</code> (quem te segue)</li>
+  </ul>
+  <p>
+    O sistema então lista os perfis que
+    <strong>não te seguem de volta</strong>, com links diretos para o
+    Instagram de cada um.
+  </p>
+
+  <a class="botao-pix" href="https://nubank.com.br/cobrar/nbzh/686a833b-80df-429e-9466-28c8700ec704" target="_blank">
+    💜 Ajude o projeto, faça um PIX
+  </a>
+
+  <hr />
+
+  <h2>✅ Funcionalidades</h2>
+  <ul>
+    <li>📊 Comparação entre seguidores e seguindo</li>
+    <li>🔗 Link direto para cada perfil</li>
+    <li>📥 Download em <code>.txt</code> da lista</li>
+    <li>🔒 Funciona totalmente offline</li>
+  </ul>
+
+  <hr />
+
+  <h2>📥 Como obter os arquivos JSON</h2>
+  <ol>
+    <li>
+      Acesse:
+      <a href="https://accountscenter.instagram.com/info_and_permissions/" target="_blank">
+        https://accountscenter.instagram.com/info_and_permissions/</a>
+    </li>
+    <li>
+      Vá até
+      <strong>"Suas informações e permissões" > "Baixar suas informações"</strong>
+    </li>
+    <li>
+      Clique em
+      <strong>"Baixar ou transferir informações" > Selecione o Instagram</strong>
+    </li>
+    <li>
+      Selecione
+      <strong>"Algumas das suas informações" > "Seguindo e seguidores"</strong>
+    </li>
+    <li>
+      Escolha a opção <strong>"Desde o início"</strong> para baixar todos os
+      dados
+    </li>
+    <li>Salve o arquivo <code>.zip</code> e extraia em seu computador</li>
+    <li>
+      Você encontrará os arquivos:
+      <ul>
+        <li>
+          <code>followers_1.json</code> — pasta
+          <code>followers_and_following/</code>
+        </li>
+        <li><code>following.json</code> — mesma pasta</li>
+      </ul>
+    </li>
+  </ol>
+
+  <hr />
+
+  <h2>🚀 Como usar</h2>
+  <ol>
+    <li>
+      Acesse a página <code>index.html</code> em um navegador de sua
+      preferência (Google Chrome, Firefox, etc).
+    </li>
+    <li>
+      Faça upload dos dois arquivos:
+      <ul>
+        <li><code>followers_1.json</code> (seguidores)</li>
+        <li><code>following.json</code> (seguindo)</li>
+      </ul>
+    </li>
+    <li>Clique em <strong>"Comparar"</strong>.</li>
+    <li>Veja a lista de perfis que não te seguem de volta.</li>
+    <li>
+      Clique em <strong>"Visitar perfil"</strong> para abrir o Instagram.
+    </li>
+    <li>(Opcional) Baixe a lista como um arquivo <code>.txt</code>.</li>
+  </ol>
+  <hr />
+
+  <p><em>Desenvolvido por Hygor Queiroz Carvalho.</em></p>
+</body>
+
+</html>

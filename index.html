@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>F2F</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/x-icon" href="./src/icon.png">
+</head>
+
+<body>
+  <h1>F2F</h1>
+
+  <h3>Verificar quem não te segue de volta no Instagram</h3>
+
+  <a class="help" href="./help.html">Como utilizar?</a><br />
+  <a class="botao-pix" href="https://nubank.com.br/cobrar/nbzh/686a833b-80df-429e-9466-28c8700ec704" target="_blank">
+    💜 Ajude o projeto, faça um PIX </a><br />
+  <br />
+
+  <label>Upload do arquivo <strong>seguidores</strong> <span class="arquivoText">(followers_1.json)</span>:</label><br />
+  <input type="file" id="followersFile" accept=".json" /><br /><br />
+
+  <label>Upload do arquivo <strong>seguindo</strong> <span class="arquivoText">(following.json)</span></label><br />
+  <input type="file" id="followingFile" accept=".json" /><br /><br />
+
+  <button class="comparar" onclick="comparar()">Comparar</button>
+
+  <div id="resultado"></div>
+  <p><em>Desenvolvido por <a href="https://www.youtube.com/channel/UC4M0A6vUw6rrS1EK2fZiEzw" target="_blank"> Hygor Q Carvalho.</a></em></p>
+  <script src="./script.js"></script>
+</body>
+
+</html>
